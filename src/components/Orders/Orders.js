@@ -10,7 +10,7 @@ const Orders = () => {
   const [cart, setCart] = useState(savedCart);
 
   const handleRemoveFormCart = (id) => {
-    const remaining = cart.filter((product) => product.id !== id);
+    const remaining = cart.filter(product => product.id !== id);
     setCart(remaining);
     removeFromDb(id);
   };

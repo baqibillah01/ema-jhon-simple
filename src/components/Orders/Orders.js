@@ -36,7 +36,9 @@ const Orders = () => {
         <Cart 
         cart={savedCart}
         handleClearCart = {handleClearCart}
-        ></Cart>
+        >
+          <div>From Orders</div>
+        </Cart>
       </div>
     </div>
   );
